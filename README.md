@@ -13,7 +13,7 @@ You may first do some things :
 - Load keyboard in french : `loadkeys fr`
 - Connect to Wifi thanks to `wifi-menu` (you can test connection with a `ping 8.8.8.8` command)
 
-# Install
+## Install
 
 To install Arch, be sure to have made the pre-requisites
 
@@ -43,3 +43,10 @@ The third script `install_root` will :
 2. Install every software specified in `progs.csv`
 3. Install `composer` (PHP package manager)
 
+The fourth script `install_user` will:
+1. Try to install every software not found by pacman with aurman (AUR repos)
+2. Install my [dotfiles](https://github.com/Phantas0s/.dotfiles)
+
+## What software are installed?
+
+Opening `progs.csv` will answer your question.
