@@ -22,7 +22,7 @@ pacman --noconfirm --needed -S grub
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
-#dialog --title "Continue installation" --yesno "Do you want to install all the softwares and the dotfiles ?" 15 60 \
-#    && curl -LO https://raw.githubusercontent.com/Awkan/ArchInstall/master/install_root.sh \
-#    && sh ./install_root.sh
+dialog --title "Continue installation" --yesno "Do you want to install all the softwares and the dotfiles ?" 15 60 \
+    && curl -LO https://raw.githubusercontent.com/Awkan/ArchInstall/master/install_root.sh \
+    && sh ./install_root.sh
 

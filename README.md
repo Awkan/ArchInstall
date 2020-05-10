@@ -34,7 +34,12 @@ The first script `install_sys.sh` will :
     - Root partition
     - Home partition
 
-The second script `install_chroot` will:
+The second script `install_chroot` will :
 1. Set up locale / time
 2. Set up Grub for the boot
+
+The third script `install_root` will :
+1. Create a new user with password
+2. Install every software specified in `progs.csv`
+3. Install `composer` (PHP package manager)
 
