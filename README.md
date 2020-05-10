@@ -23,3 +23,7 @@ The first script `install_sys.sh` will :
     - Root partition
     - Home partition
 
+The second script `install_chroot` will:
+1. Set up locale / time
+2. Set up Grub for the boot
+

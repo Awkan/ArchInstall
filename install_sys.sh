@@ -91,8 +91,8 @@ mkdir /mnt/home
 mount /dev/sda4 /mnt/home
 
 # Select appropriate mirror
-pacman -Syy --noconfirm
-pacman -S --noconfirm reflector
+pacman --noconfirm -Syy
+pacman --noconfirm --needed -S reflector
 cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 reflector -c "FR" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist
 
@@ -103,9 +103,9 @@ pacstrap /mnt base base-devel linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 
 ### Continue installation
-#curl https://raw.githubusercontent.com/Awkan/ArchInstall/master/install_chroot.sh > /mnt/install_chroot.sh \
-#    && arch-chroot /mnt bash install_chroot.sh \
-#    && rm /mnt/install_chroot.sh
+curl https://raw.githubusercontent.com/Awkan/ArchInstall/master/install_chroot.sh > /mnt/install_chroot.sh \
+    && arch-chroot /mnt bash install_chroot.sh \
+    && rm /mnt/install_chroot.sh
 
 cat comp > /mnt/etc/hostname \
     && rm comp
