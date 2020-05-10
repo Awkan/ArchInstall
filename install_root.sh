@@ -116,7 +116,7 @@ wget https://getcomposer.org/composer.phar \
 mkdir -p /mnt/usbkey/ >/dev/null
 
 curl https://raw.githubusercontent.com/Phantas0s/ArchInstall/master/sudoers > /etc/sudoer
-scurl https://raw.githubusercontent.com/Awkan/ArchInstall/master/install_user.sh > /tmp/install_user.sh;
+curl https://raw.githubusercontent.com/Awkan/ArchInstall/master/install_user.sh > /tmp/install_user.sh
 sudo -u $name sh /tmp/install_user.sh
 rm -f /tmp/install_user.sh
 
