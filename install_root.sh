@@ -115,7 +115,7 @@ wget https://getcomposer.org/composer.phar \
 # Create folder to mount usb keys
 mkdir -p /mnt/usbkey/ >/dev/null
 
-curl https://raw.githubusercontent.com/Phantas0s/ArchInstall/master/sudoers > /etc/sudoer
+curl https://raw.githubusercontent.com/Awkan/ArchInstall/master/sudoers > /etc/sudoers
 curl https://raw.githubusercontent.com/Awkan/ArchInstall/master/install_user.sh > /tmp/install_user.sh
 sudo -u $name sh /tmp/install_user.sh
 rm -f /tmp/install_user.sh
